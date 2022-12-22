@@ -187,7 +187,7 @@ body.dark-theme {
 }
 
 .profile__profession {
-  font-size: var(--smaller-font-size);
+  font-size: var(--normal-font-size);
   font-weight: 500;
   color: var(--text-color);
   margin-bottom: 1rem;
@@ -200,13 +200,14 @@ body.dark-theme {
 }
 
 .profile__social {
-  font-size: 1.25rem;
-  color: var(--title-color);
+  font-size: 1.50rem;
+  color: var(--first-color);
   transition: 0.3s;
 }
 
-.profile__social-link:hover {
+.profile__social-link:hover,:visited {
   color: var(--first-color);
+  text-decoration: none;
 }
 
 .profile__info {
