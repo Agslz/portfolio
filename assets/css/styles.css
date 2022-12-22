@@ -72,11 +72,12 @@ ul {
 
 a:visited {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--first-color);
 }
 
 a {
   text-decoration: none;
+  color: var(--first-color);
 }
 
 img {
@@ -202,8 +203,9 @@ body.dark-theme {
 
 .profile__social {
   font-size: 1.5rem;
-  color: var(--first-color);
+  color: var(--first-color-alt);
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .profile__social-link:hover,
