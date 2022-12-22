@@ -70,7 +70,7 @@ ul {
   list-style: none;
 }
 
-a:visited{
+a:visited {
   text-decoration: none;
   color: var(--text-color);
 }
@@ -187,7 +187,8 @@ body.dark-theme {
 }
 
 .profile__profession {
-  font-size: var(--normal-font-size);
+  font-size: var(--small-font-size);
+  padding-top: 0.5rem;
   font-weight: 500;
   color: var(--text-color);
   margin-bottom: 1rem;
@@ -200,12 +201,13 @@ body.dark-theme {
 }
 
 .profile__social {
-  font-size: 1.50rem;
+  font-size: 1.5rem;
   color: var(--first-color);
   transition: 0.3s;
 }
 
-.profile__social-link:hover,:visited {
+.profile__social-link:hover,
+:visited {
   color: var(--first-color);
   text-decoration: none;
 }
@@ -326,7 +328,7 @@ body.dark-theme {
   position: absolute;
   width: 100%;
   height: 100%;
-  bottom: 0;
+  bottom: -100%;
   left: 0;
   background: linear-gradient(
     180deg,
@@ -350,6 +352,10 @@ body.dark-theme {
 .projects__title {
   font-size: var(--h3-font-size);
   margin-bottom: 0.75rem;
+}
+
+.projects__card:hover .projects__modal {
+  bottom: 0;
 }
 
 .projects_button {
@@ -481,11 +487,11 @@ body.dark-theme {
 
 @media screen and (min-width: 776px) {
   .projects__content,
-  .skills__content{
+  .skills__content {
     grid-template-columns: repeat(2, 332px);
   }
 
-  .skills__content{
+  .skills__content {
     justify-content: center;
     column-gap: 3rem;
   }
@@ -493,57 +499,50 @@ body.dark-theme {
 
 /* For large devices */
 @media screen and (min-width: 992px) {
-  .container{
+  .container {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .change-theme{
+  .change-theme {
     top: 2.5rem;
     right: 2.5rem;
   }
-  
-  .profile{
+
+  .profile {
     padding-top: 4rem;
   }
 
-  
-
-  .profile__profession{
+  .profile__profession {
     margin-bottom: 1.5rem;
   }
 
-  .profile__info{
+  .profile__info {
     column-gap: 3rem;
   }
 
-  .profile__info-description{
+  .profile__info-description {
     font-size: var(--small-font-size);
   }
 
-  .profile__buttons{
+  .profile__buttons {
     column-gap: 2rem;
   }
 
-  .projects_content{
+  .projects_content {
     gap: 2rem 3rem;
   }
 
-  .projects__modal{
+  .projects__modal {
     padding: 1.5rem;
   }
 
-  .skills__title{
+  .skills__title {
     font-size: var(--normal-font-size);
     margin-bottom: 2.5rem;
   }
 
-  .footer__copy{
+  .footer__copy {
     margin: 4.5rem 0 2.5rem;
   }
-
-  
-
-
-
 }
