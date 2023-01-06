@@ -162,7 +162,7 @@ body.dark-theme {
   text-align: center;
 }
 
-/*Descomentar si se agrega una imagen de perfil*/
+/*Uncomment if a profile picture is added*/
 /*.profile__perfil {
   width: 100px;
   height: 100px;
@@ -462,7 +462,6 @@ body.dark-theme {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-
 @media screen and (max-width: 380px) {
   .container {
     margin-left: 1rem;
@@ -484,7 +483,6 @@ body.dark-theme {
 }
 
 /* For medium devices */
-
 @media screen and (min-width: 576px) {
   .projects__content {
     grid-template-columns: 332px;
