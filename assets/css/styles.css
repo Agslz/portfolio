@@ -354,7 +354,7 @@ body.dark-theme {
 
 .projects__subtitle,
 .projects__title {
-  color: #fff;
+  color: rgb(20, 19, 19);
 }
 
 .projects__subtitle {
@@ -368,6 +368,13 @@ body.dark-theme {
 
 .projects__card:hover .projects__modal {
   bottom: 0;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.42);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.6px);
+  -webkit-backdrop-filter: blur(8.6px);
+  cursor: pointer;
 }
 
 .projects_button {
