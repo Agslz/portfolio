@@ -259,6 +259,11 @@ body.dark-theme {
   column-gap: 0.25rem;
 }
 
+.colored{
+  font-size: 1.7rem;
+}
+
+
 /*=============== BUTTONS ===============*/
 
 .button {
