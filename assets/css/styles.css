@@ -268,10 +268,10 @@ body.dark-theme {
 .button {
   display: inline-flex;
   align-items: center;
-  column-gap: 0.5rem;
+  column-gap: 0.25rem;
   background-color: var(--first-color);
   color: #fff;
-  padding: 1.15rem 1.5rem;
+  padding: 1rem 1rem;
   border-radius: 0.5rem;
   transition: 0.3s;
 }
@@ -355,13 +355,13 @@ body.dark-theme {
     180deg,
     hsla(var(--hue), 24%, 40%, 0.3) 0% hsla(var(--hue), 24%, 4%, 1) 95%
   );
- /* From https://css.glass */
-background: rgba(50, 48, 48, 0.68);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(10px);
--webkit-backdrop-filter: blur(10px);
-border: 1px solid rgba(50, 48, 48, 0.2);
+  /* From https://css.glass */
+  background: rgba(50, 48, 48, 0.68);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(50, 48, 48, 0.2);
   display: grid;
   align-items: flex-end;
   padding: 1.5rem 1.25rem;
