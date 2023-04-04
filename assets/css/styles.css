@@ -162,8 +162,7 @@ body.dark-theme {
   text-align: center;
 }
 
-/*Uncomment if a profile picture is added*/
-/*.profile__perfil {
+.profile__perfil {
   width: 100px;
   height: 100px;
   background: linear-gradient(
@@ -178,11 +177,13 @@ body.dark-theme {
   justify-content: center;
 }
 
-.profile__perfil img{
-  width: 75px;
+.profile__perfil img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.profile__border{
+.profile__border {
   border: 3.5px solid var(--first-color);
   justify-self: center;
   width: 115px;
@@ -191,7 +192,7 @@ body.dark-theme {
   display: grid;
   place-items: center;
   margin-bottom: 0.75rem;
-}*/
+}
 
 .profile__name {
   font-size: var(--h2-font-size);
