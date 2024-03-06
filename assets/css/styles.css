@@ -163,8 +163,8 @@ body.dark-theme {
 }
 
 .profile__perfil {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   background: linear-gradient(
     180deg,
     hsla(var(--hue), var(--sat), var(--lig), 1) 0%,
@@ -181,14 +181,13 @@ body.dark-theme {
   max-width: 100%;
   height: auto;
   position: relative;
-  top: 25px;
 }
 
 .profile__border {
   border: 3.5px solid var(--first-color);
   justify-self: center;
-  width: 115px;
-  height: 115px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -214,7 +213,7 @@ body.dark-theme {
 }
 
 .profile__social {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: var(--first-color-alt);
   transition: 0.3s;
   text-decoration: none;
