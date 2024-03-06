@@ -210,11 +210,11 @@ body.dark-theme {
 .profile__social {
   display: flex;
   justify-content: center;
-  column-gap: 0.75rem;
+  column-gap: 0.90rem;
 }
 
 .profile__social {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: var(--first-color-alt);
   transition: 0.3s;
   text-decoration: none;
