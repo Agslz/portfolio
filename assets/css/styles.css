@@ -90,7 +90,7 @@ img {
   position: absolute;
   top: 1.5rem;
   right: 0;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   color: var(--title-color);
   cursor: pointer;
   transition: 0.3s;
@@ -104,7 +104,7 @@ img {
   position: absolute;
   top: 1.5rem;
   left: 0; /* Cambiado de "right: 0;" a "left: 0;" */
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   color: var(--title-color);
   cursor: pointer;
   transition: 0.3s;
