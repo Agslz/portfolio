@@ -100,6 +100,21 @@ img {
   color: var(--first-color);
 }
 
+.change-language {
+  position: absolute;
+  top: 1.5rem;
+  left: 0; /* Cambiado de "right: 0;" a "left: 0;" */
+  font-size: 1.25rem;
+  color: var(--title-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.change-language:hover {
+  color: var(--first-color);
+}
+
+
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
   --title-color: hsl(var(--hue), 12%, 95%);
@@ -530,6 +545,11 @@ body.dark-theme {
   .change-theme {
     top: 2.5rem;
     right: 2.5rem;
+  }
+
+  .change-language {
+    top: 2.5rem;
+    left: 2.5rem;
   }
 
   .profile {
