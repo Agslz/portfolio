@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
     // Función para cargar el archivo JSON del idioma correspondiente
     function loadLanguage(language) {
-      fetch(`/assets/js/${language}.json`)
+      fetch(`./assets/js/${language}.json`)
         .then((response) => response.json())
         .then((data) => {
           translatedTexts = data;
