@@ -33,6 +33,9 @@
     <header class="profile container">
       <!--=============== THEME BUTTON ===============-->
       <i class="ri-moon-line change-theme" id="theme-button"></i>
+      <div id="flags" class="flags">
+        <i class="ri-flag-line change-language" data-language="es"></i>
+      </div>
       <div class="profile__container grid">
         <div class="profile__data">
           <div class="profile__border">
@@ -43,7 +46,7 @@
             </div>
           </div>
           <h2 class="profile__name">Agustín Schulze</h2>
-          <h3 class="profile__profession">FullStack Developer</h3>
+          <h3 class="profile__profession" data-i18n="profile.job">FullStack Developer</h3>
           <ul class="profile__social">
             <a
               href="https://www.linkedin.com/in/agustin-schulze/"
@@ -68,32 +71,32 @@
         <div class="profile__info grid">
           <div class="profile__info-group">
             <h3 class="profile__info-number">+2</h3>
-            <p class="profile__info-description">
+            <p class="profile__info-description" data-i18n="years_work">
               Years of <br />
               work
             </p>
           </div>
           <div class="profile__info-group">
             <h3 class="profile__info-number">+20</h3>
-            <p class="profile__info-description">
+            <p class="profile__info-description" data-i18n="completed_projects">
               Completed <br />
               projects
             </p>
           </div>
           <div class="profile__info-group">
             <h3 class="profile__info-number">+10</h3>
-            <p class="profile__info-description">
+            <p class="profile__info-description" data-i18n="customers">
               Satisfied <br />
               customers
             </p>
           </div>
         </div>
-
         <div class="profile__buttons">
           <a
             download=""
             href="./assets/pdf/Agustín Schulze CV - (EN).pdf"
             class="button"
+            data-i18n="download_cv"
             >Download CV <i class="ri-download-line"></i
           ></a>
 
@@ -124,10 +127,11 @@
           <button
             data-target="#projects"
             class="filters__button filter-tab-active"
+            data-i18n="projects"
           >
             Projects
           </button>
-          <button data-target="#skills" class="filters__button">Skills</button>
+          <button data-target="#skills" class="filters__button" data-i18n="skills">Skills</button>
         </ul>
 
         <div class="filters__sections">
@@ -146,7 +150,7 @@
             <div class="projects__modal">
               <div>
                 <!-- <span class="projects__subtitle">Backend</span> -->
-                <h3 class="projects__title">Java Microservices</h3>
+                <h3 class="projects__title" data-i18n="project1">Java Microservices</h3>
                 <a
                   target="_blank"
                   href="https://github.com/Agslz/java-microservices"
@@ -171,7 +175,7 @@
             <div class="projects__modal">
               <div>
                 <!-- <span class="projects__subtitle">Backend</span> -->
-                <h3 class="projects__title">Escalable Application</h3>
+                <h3 class="projects__title" data-i18n="project2">Escalable Application</h3>
                 <a
                   target="_blank"
                   href="https://github.com/Agslz/springboot-microservices"
@@ -196,7 +200,7 @@
               <div class="projects__modal">
                 <div>
                   <!-- <span class="projects__subtitle">FullStack</span> -->
-                  <h3 class="projects__title">Customer control</h3>
+                  <h3 class="projects__title" data-i18n="project3">Customer control</h3>
                   <a
                     target="_blank"
                     href="https://github.com/Agslz/customer-control-spring"
@@ -221,7 +225,7 @@
               <div class="projects__modal">
                 <div>
                   <!-- <span class="projects__subtitle">FullStack</span> -->
-                  <h3 class="projects__title">FixitNow</h3>
+                  <h3 class="projects__title" data-i18n="project4">FixitNow</h3>
                   <a
                     target="_blank"
                     href="https://github.com/Agslz/arreglalo-ya"
@@ -247,7 +251,7 @@
               <div class="projects__modal">
                 <div>
                   <!-- <span class="projects__subtitle">FullStack</span> -->
-                  <h3 class="projects__title">News Portal</h3>
+                  <h3 class="projects__title" data-i18n="project5">News Portal</h3>
                   <a
                     target="_blank"
                     href="https://github.com/Agslz/egg-news"
@@ -272,7 +276,7 @@
               <div class="projects__modal">
                 <div>
                   <!-- <span class="projects__subtitle">FullStack</span> -->
-                  <h3 class="projects__title">Inventory Control</h3>
+                  <h3 class="projects__title" data-i18n="project6">Inventory Control</h3>
                   <a
                     target="_blank"
                     href="https://github.com/Agslz/frontend-inventory-control"
@@ -296,7 +300,7 @@
               <div class="projects__modal">
                 <div>
                   <!--<span class="projects__subtitle"></span>-->
-                  <h3 class="projects__title">Videocall App</h3>
+                  <h3 class="projects__title" data-i18n="project7">Videocall App</h3>
                   <a
                     target="_blank"
                     href="https://github.com/Agslz/springboot-videocall-app-zegocloud"
@@ -321,7 +325,7 @@
               <div class="projects__modal">
                 <div>
                   <!-- <span class="projects__subtitle">Web</span> -->
-                  <h3 class="projects__title">Real Time Chat</h3>
+                  <h3 class="projects__title" data-i18n="project8">Real Time Chat</h3>
                   <a
                     target="_blank"
                     href="https://github.com/Agslz/springboot-realtime-chat"
@@ -337,6 +341,28 @@
             </article>
             <article class="projects__card">
               <img
+                src="./assets/img/project12.jpeg"
+                alt=""
+                class="projects__img"
+              />
+              <div class="projects__modal">
+                <div>
+                  <!-- <span class="projects__subtitle">Web</span> -->
+                  <h3 class="projects__title" data-i18n="project12"></h3>
+                  <a
+                    target="_blank"
+                    href="https://github.com/Agslz/java-http-server"
+                    class="projects__button button button__small"
+                    ><i class="ri-link"></i
+                  ></a>
+                  <i class="devicon-java-plain-wordmark colored"></i>
+                  <i class="devicon-spring-plain colored"></i>
+                  <i class="devicon-mysql-plain colored"></i>
+                </div>
+              </div>
+            </article>
+            <article class="projects__card">
+              <img
                 src="./assets/img/project8.jpeg"
                 alt=""
                 class="projects__img"
@@ -344,7 +370,7 @@
               <div class="projects__modal">
                 <div>
                   <!-- <span class="projects__subtitle">Web</span> -->
-                  <h3 class="projects__title">Ecommerce + Admin Dashboard</h3>
+                  <h3 class="projects__title" data-i18n="project9">Ecommerce + Admin Dashboard</h3>
                   <a
                     target="_blank"
                     href="https://github.com/Agslz/nextjs-react-ecommerce-store"
@@ -367,7 +393,7 @@
               <div class="projects__modal">
                 <div>
                   <!-- <span class="projects__subtitle">Web</span> -->
-                  <h3 class="projects__title">JavaFX GYM</h3>
+                  <h3 class="projects__title" data-i18n="project10">JavaFX GYM</h3>
                   <a
                     target="_blank"
                     href="https://github.com/Agslz/Java-Gym"
@@ -390,7 +416,7 @@
               <div class="projects__modal">
                 <div>
                   <!-- <span class="projects__subtitle">Web</span> -->
-                  <h3 class="projects__title">Spring Boot Admin Dashboard</h3>
+                  <h3 class="projects__title" data-i18n="project11">Spring Boot Admin Dashboard</h3>
                   <a
                     target="_blank"
                     href="https://github.com/Agslz/springboot-api-rest-dashboard-admin"
@@ -417,21 +443,21 @@
                     <i class="ri-checkbox-circle-line"></i>
                     <div>
                       <h3 class="skills__name">HTML</h3>
-                      <span class="skills__level">Intermediate</span>
+                      <span class="skills__level" data-i18n="intermediate">Intermediate</span>
                     </div>
                   </div>
                   <div class="skills__data">
                     <i class="ri-checkbox-circle-line"></i>
                     <div>
                       <h3 class="skills__name">CSS</h3>
-                      <span class="skills__level">Intermediate</span>
+                      <span class="skills__level" data-i18n="intermediate">Intermediate</span>
                     </div>
                   </div>
                   <div class="skills__data">
                     <i class="ri-checkbox-circle-line"></i>
                     <div>
                       <h3 class="skills__name">Angular</h3>
-                      <span class="skills__level">Basic</span>
+                      <span class="skills__level" data-i18n="basic">Basic</span>
                     </div>
                   </div>
                 </div>
@@ -440,21 +466,21 @@
                     <i class="ri-checkbox-circle-line"></i>
                     <div>
                       <h3 class="skills__name">Bootstrap</h3>
-                      <span class="skills__level">Intermediate</span>
+                      <span class="skills__level" data-i18n="intermediate">Intermediate</span>
                     </div>
                   </div>
                   <div class="skills__data">
                     <i class="ri-checkbox-circle-line"></i>
                     <div>
                       <h3 class="skills__name">Javascript</h3>
-                      <span class="skills__level">Intermediate</span>
+                      <span class="skills__level" data-i18n="intermediate">Intermediate</span>
                     </div>
                   </div>
                   <div class="skills__data">
                     <i class="ri-checkbox-circle-line"></i>
                     <div>
                       <h3 class="skills__name">React</h3>
-                      <span class="skills__level">Basic</span>
+                      <span class="skills__level" data-i18n="basic">Basic</span>
                     </div>
                   </div>
                 </div>
@@ -468,35 +494,35 @@
                     <i class="ri-checkbox-circle-line"></i>
                     <div>
                       <h3 class="skills__name">Java</h3>
-                      <span class="skills__level">Intermediate</span>
+                      <span class="skills__level" data-i18n="intermediate">Intermediate</span>
                     </div>
                   </div>
                   <div class="skills__data">
                     <i class="ri-checkbox-circle-line"></i>
                     <div>
                       <h3 class="skills__name">Linux</h3>
-                      <span class="skills__level">Intermediate</span>
+                      <span class="skills__level" data-i18n="intermediate">Intermediate</span>
                     </div>
                   </div>
                   <div class="skills__data">
                     <i class="ri-checkbox-circle-line"></i>
                     <div>
                       <h3 class="skills__name">MySQL</h3>
-                      <span class="skills__level">Intermediate</span>
+                      <span class="skills__level" data-i18n="intermediate">Intermediate</span>
                     </div>
                   </div>
                   <div class="skills__data">
                     <i class="ri-checkbox-circle-line"></i>
                     <div>
                       <h3 class="skills__name">OAuth2</h3>
-                      <span class="skills__level">Basic</span>
+                      <span class="skills__level" data-i18n="basic">Basic</span>
                     </div>
                   </div>
                   <div class="skills__data">
                     <i class="ri-checkbox-circle-line"></i>
                     <div>
                       <h3 class="skills__name">JWT</h3>
-                      <span class="skills__level">Basic</span>
+                      <span class="skills__level" data-i18n="basic">Basic</span>
                     </div>
                   </div>
                 </div>
@@ -505,35 +531,35 @@
                     <i class="ri-checkbox-circle-line"></i>
                     <div>
                       <h3 class="skills__name">Spring Boot</h3>
-                      <span class="skills__level">Intermediate</span>
+                      <span class="skills__level" data-i18n="intermediate">Intermediate</span>
                     </div>
                   </div>
                   <div class="skills__data">
                     <i class="ri-checkbox-circle-line"></i>
                     <div>
                       <h3 class="skills__name">Docker</h3>
-                      <span class="skills__level">Intermediate</span>
+                      <span class="skills__level" data-i18n="intermediate">Intermediate</span>
                     </div>
                   </div>
                   <div class="skills__data">
                     <i class="ri-checkbox-circle-line"></i>
                     <div>
                       <h3 class="skills__name">Git</h3>
-                      <span class="skills__level">Intermediate</span>
+                      <span class="skills__level" data-i18n="intermediate">Intermediate</span>
                     </div>
                   </div>
                   <div class="skills__data">
                     <i class="ri-checkbox-circle-line"></i>
                     <div>
                       <h3 class="skills__name">Spring Cloud</h3>
-                      <span class="skills__level">Basic</span>
+                      <span class="skills__level" data-i18n="basic">Basic</span>
                     </div>
                   </div>
                   <div class="skills__data">
                     <i class="ri-checkbox-circle-line"></i>
                     <div>
                       <h3 class="skills__name">Microservices</h3>
-                      <span class="skills__level">Basic</span>
+                      <span class="skills__level" data-i18n="basic">Basic</span>
                     </div>
                   </div>
                 </div>
@@ -547,6 +573,7 @@
     <!--=============== FOOTER ===============-->
     <footer class="footer container">
       <span class="footer__copy"
+      data-i18n="reserved_rights"
         >&#169; Agustin Schulze. All rights reserved</span
       >
     </footer>
@@ -556,5 +583,7 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/language.js"></script>
+
   </body>
 </html>
