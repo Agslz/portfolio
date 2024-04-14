@@ -14,6 +14,24 @@ document.addEventListener("DOMContentLoaded", function () {
         loadLanguage(newLanguage);
       });
   
+    // Función para actualizar el enlace de descarga del CV en función del idioma
+    function updateDownloadLink(language) {
+      var downloadLink = document.getElementById("download-cv");
+      if (downloadLink) {
+        if (language === "es") {
+          downloadLink.setAttribute(
+            "href",
+            "./assets/pdf/Agustin Schulze CV - ATS - (ES).pdf"
+          );
+        } else if (language === "en") {
+          downloadLink.setAttribute(
+            "href",
+            "./assets/pdf/Agustin Schulze CV - ATS - (EN).pdf"
+          );
+        }
+      }
+    }
+  
     // Función para cargar el archivo JSON del idioma correspondiente
     function loadLanguage(language) {
       fetch(`/assets/js/${language}.json`)
@@ -22,6 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
           translatedTexts = data;
           document.documentElement.lang = language;
           updateTexts();
+          // Actualiza el enlace de descarga del CV después de cargar el idioma
+          updateDownloadLink(language);
         })
         .catch((error) => console.error("Error cargando el idioma:", error));
     }
@@ -32,9 +52,9 @@ document.addEventListener("DOMContentLoaded", function () {
       var elements = document.querySelectorAll("[data-i18n]");
   
       // Imprimir el contenido completo de translatedTexts.profile en la consola
-    //   console.log("Contenido de translatedTexts.profile:", translatedTexts.profile);
+      //   console.log("Contenido de translatedTexts.profile:", translatedTexts.profile);
   
-      elements.forEach(element => {
+      elements.forEach((element) => {
         var key = element.getAttribute("data-i18n");
         // console.log("Clave buscada:", key);
         // Verificar si translatedTexts.profile existe
@@ -51,10 +71,12 @@ document.addEventListener("DOMContentLoaded", function () {
             }
           } else {
             // Si la clave no está presente, deja el texto sin cambios
-            console.warn(`La clave '${key}' no está presente en translatedTexts.profile`);
+            console.warn(
+              `La clave '${key}' no está presente en translatedTexts.profile`
+            );
           }
         }
       });
-    }  
+    }
   });
   
