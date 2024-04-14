@@ -1,0 +1,26 @@
+{
+  "profile": {
+    "job": "Desarrollador FullStack",
+    "years_work": "Años de <br /> trabajo",
+    "completed_projects": "Proyectos <br /> completados",
+    "customers": "Clientes <br /> satisfechos",
+    "download_cv": "Descargar CV",
+    "projects":"Proyectos",
+    "skills":"Habilidades",
+    "intermediate":"Intermedio",
+    "basic":"Basica",
+    "reserved_rights":"&#169; Agustin Schulze. Todos los derechos reservados",
+    "project1": "Microservicios Java",
+    "project2": "Aplicación Autoescalable",
+    "project3": "Control de Clientes",
+    "project4": "ArreglaloYa",
+    "project5": "Portal de noticias",
+    "project6": "Control de inventario",
+    "project7": "Videollamada App",
+    "project8": "Chat en Tiempo real",
+    "project9": "Ecommerce + Panel de Admin",
+    "project10": "JavaFX GYM",
+    "project11": "Spring Boot Panel de Admin",
+    "project12": "Servidor Java HTTP"
+  }
+}
