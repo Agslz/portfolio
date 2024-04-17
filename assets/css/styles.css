@@ -90,7 +90,7 @@ img {
   position: absolute;
   top: 1.5rem;
   right: 0;
-  font-size: 1.50rem;
+  font-size: 1.5rem;
   color: var(--title-color);
   cursor: pointer;
   transition: 0.3s;
@@ -104,7 +104,7 @@ img {
   position: absolute;
   top: 1.5rem;
   left: 0; /* Cambiado de "right: 0;" a "left: 0;" */
-  font-size: 1.50rem;
+  font-size: 1.5rem;
   color: var(--title-color);
   cursor: pointer;
   transition: 0.3s;
@@ -113,7 +113,6 @@ img {
 .change-language:hover {
   color: var(--first-color);
 }
-
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
@@ -224,7 +223,7 @@ body.dark-theme {
 .profile__social {
   display: flex;
   justify-content: center;
-  column-gap: 0.90rem;
+  column-gap: 0.9rem;
 }
 
 .profile__social {
@@ -352,7 +351,7 @@ body.dark-theme {
 
 .projects__card {
   position: relative;
-  border-radius: 1rem;
+  border-radius: 1.4rem;
   overflow: hidden;
 }
 
@@ -371,13 +370,11 @@ body.dark-theme {
     180deg,
     hsla(var(--hue), 24%, 40%, 0.3) 0% hsla(var(--hue), 24%, 4%, 1) 95%
   );
-  /* From https://css.glass */
-  background: rgba(50, 48, 48, 0.68);
-  border-radius: 16px;
+  background: rgba(28, 26, 26, 0.72);
+  border-radius: 20px; /* Aumenta el radio de borde */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(50, 48, 48, 0.2);
+  backdrop-filter: blur(9.8px);
+  -webkit-backdrop-filter: blur(9.8px);
   display: grid;
   align-items: flex-end;
   padding: 1.5rem 1.25rem;
